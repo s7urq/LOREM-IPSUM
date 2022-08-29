@@ -1,7 +1,3 @@
-*{
-    background-color: rgb(2, 0, 0);
-    color: whitesmoke;
-}
 @font-face {
     font-family: SF-display;
     src: url(fonts/sf-pro-display-font/SF-Pro-Display-Regular.woff);
@@ -10,9 +6,78 @@
     font-family: sf-text;
     src: url(fonts/sf-pro-display-font/sf-pro-text-regular.woff);
 }
-
-.cabeza{
-    font-size: 61px;
-    font-family: 'sf-text';
+body{
+    background-color:whitesmoke;
+    margin: 0;
+}
+header{
+    padding: 0rem 0;
+    background-color: #333;
     color: whitesmoke;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+h1{
+    font-size:300%;
+    font-weight: bolder;
+}
+p{
+    margin-bottom: 1.6em;
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    font-family: 'sf-text';
+}
+.main{
+    padding-top: 11rem;
+}
+
+.navigation{
+    color: gainsboro;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.3rem 1rem;
+    transition: all 0.21s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background-color: rgba(125, 241, 231, 0.212);
+}
+footer{
+    background-color: #e0e0e0;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.logo{
+    font-family: 'Sf-display';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
 }
