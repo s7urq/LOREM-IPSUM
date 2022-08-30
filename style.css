@@ -41,24 +41,24 @@ p{
     padding-top: 11rem;
 }
 
-.navigation{
+.menu-horizontal{
     color: gainsboro;
 }
-.navigation ul{
+.menu-horizontal ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.navigation ul li{
+.menu-horizontal ul li{
     display: inline-block;
 }
-.navigation ul li a{
+.menu-horizontal ul li a{
     display: block;
     padding: 0.3rem 1rem;
     transition: all 0.21s linear;
     border-radius: 5px;
 }
-.navigation ul li a:hover{
+.menu-horizontal ul li a:hover{
     background-color: rgba(125, 241, 231, 0.212);
 }
 footer{
