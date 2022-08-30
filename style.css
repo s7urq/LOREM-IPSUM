@@ -77,6 +77,7 @@ p{
     display: block;
     transition-duration: 2s;
     border-radius: 4px;
+    background-color: #000;
 }
 
 .menu-vertical li:hover{
@@ -93,6 +94,14 @@ p{
 }
 h2{
     text-decoration: underline;
+}
+
+.flecha{
+    position:fixed;
+    rotate: -12deg;
+    opacity: 94%;
+    top: 15%;
+    right: 39.67%;
 }
 
 #abrir-popup{
