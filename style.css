@@ -7,7 +7,6 @@
     src: url(fonts/sf-pro-display-font/sf-pro-text-regular.woff);
 }
 body{
-    background-color:whitesmoke;
     margin: 0;
 }
 header{
@@ -39,6 +38,11 @@ p{
 }
 .main{
     padding-top: 11rem;
+    padding-bottom: 5rem;
+    background-color: whitesmoke;
+    background-image: url(img/fondo.jpeg);
+    background-blend-mode:hard-light;
+    background-size: cover;
 }
 
 .menu-horizontal{
@@ -59,13 +63,53 @@ p{
     border-radius: 5px;
 }
 .menu-horizontal ul li a:hover{
-    background-color: rgba(125, 241, 231, 0.212);
+    background-color:  rgba(125, 241, 231, 0.212);
 }
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    transition-duration: 2s;
+    border-radius: 4px;
+}
+
+.menu-vertical li:hover{
+    background-color: rgba;
+    border-radius: 3px;
+}
+#modal{
+    background-color: rgba(233, 72, 72, 0.82);
+    max-width: 40%;
+    color: aliceblue;
+    text-decoration:dashed;
+    text-align: center;
+    border: solid rgb(39, 34, 34);
+}
+h2{
+    text-decoration: underline;
+}
+#cerrar-popup{
+    border-radius: 4px;
+    text-shadow: 1px 1px 12px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 15px 20px;
+    background: rgb(255, 220, 0);
+    border: solid #000 2px;
+    width: 34%;}
 footer{
     background-color: #e0e0e0;
     padding: 4rem 0;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 0rem;
 }
 .logo-nav-container{
     display: flex;
