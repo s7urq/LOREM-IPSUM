@@ -30,7 +30,7 @@ p{
     margin-bottom: 1.6em;
 }
 .container{
-    width: 85%;
+    width: 87%;
     max-width: 850px;
     margin: 0 auto;
     font-family: 'sf-text';
@@ -77,12 +77,12 @@ p{
     display: block;
     transition-duration: 2s;
     border-radius: 4px;
-    background-color: #000;
 }
 
 .menu-vertical li:hover{
-    background-color: black;
-    border-radius: 3px;
+    background-color: red;
+    border-radius: 0px;
+    width: 100%;
 }
 #modal{
     background-color: rgba(233, 72, 72, 0.82);
@@ -100,8 +100,8 @@ h2{
     position:fixed;
     rotate: -12deg;
     opacity: 94%;
-    top: 15%;
-    right: 39.67%;
+    top: 11.5vh;
+    right: 41.7vw;
 }
 
 #abrir-popup{
