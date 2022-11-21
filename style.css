@@ -29,19 +29,19 @@ h1{
 p{
     margin-bottom: 1.6em;
 }
-.container{
-    width: 87%;
-    max-width: 850px;
-    margin: 0 auto;
-    font-family: 'sf-text';
-}
-.main{
+main{
     padding-top: 11rem;
     padding-bottom: 5rem;
     background-color: whitesmoke;
     background-image: url(img/fondo.jpeg);
     background-blend-mode:hard-light;
     background-size: cover;
+}
+.container{
+    width: 87%;
+    max-width: 850px;
+    margin: 0 auto;
+    font-family: 'sf-text';
 }
 
 .menu-horizontal{
@@ -58,11 +58,12 @@ p{
 .menu-horizontal ul li a{
     display: block;
     padding: 0.3rem 1rem;
-    transition: all 0.21s linear;
-    border-radius: 5px;
+    
 }
 .menu-horizontal ul li a:hover{
     background-color:  rgba(125, 241, 231, 0.212);
+    transition: all 0.21s linear;
+    border-radius: 5px;
 }
 
 .menu-vertical{
@@ -71,6 +72,7 @@ p{
     list-style: none;
     width: 166px;
     background-color: rgba(0,0,0,0.8);
+    align-content: space-between;
 }
 
 .menu-horizontal li:hover .menu-vertical{
@@ -80,9 +82,14 @@ p{
 }
 
 .menu-vertical li:hover{
-    background-color: red;
+    background-color: rgb(144,204,196);
     border-radius: 0px;
     width: 100%;
+}
+
+.menu-horizontal  img{
+    width: 80px;
+    display:none;
 }
 #modal{
     background-color: rgba(233, 72, 72, 0.82);
@@ -100,8 +107,7 @@ h2{
     position:fixed;
     rotate: -12deg;
     opacity: 94%;
-    top: 11.5vh;
-    right: 41.7vw;
+    top: px;
 }
 
 #abrir-popup{
@@ -136,6 +142,17 @@ footer{
     align-items: center;
     padding: 2rem 0;
 }
+
+.back_menu{
+    display:none
+}
+
+#btn_menu{
+    width:20px;
+    display: none;
+
+}
+/*
 .logo{
     font-family: 'Sf-display';
     display: flex;
@@ -143,10 +160,82 @@ footer{
     align-items: center;
     font-size: 40px;
     text-align: center;
-}
+} 
+*/
 
 .wsp{
     position: fixed;
     bottom: 21px;
     right: 55px;
+}
+
+@media screen and (max-width: 720px){
+    .menu-horizontal {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: -3000px;
+        background: whitesmoke;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        text-align: right;
+    }
+
+    .menu-horizontal ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-horizontal ul li{
+        margin-top: 20px;
+        margin-left:0;
+    }
+
+    .menu-horizontal ul li a{
+        color:rgb(39, 39, 39);
+    }
+    
+    .menu-vertical {
+        position:fixed;
+        top: 110px;
+        color:whitesmoke;
+    }
+
+    .menu-horizontal .menu-vertical{
+        display: none;
+    }
+
+    .menu-horizontal .menu-vertical a{
+        color: whitesmoke;
+    }
+
+    .menu-horizontal ul li a:hover{
+        transition: all 0.21s linear;
+        background: none;
+        border-radius: none;
+    }
+    .menu-horizontal  img{
+        display: block;
+        right: 0;
+    }
+    .menu-vertical li:hover{
+        background-color: rgb(144,204,196);
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100vh;
+        background:rgba(0,0,0,0.6);
+        display:none;
+    }
+    #btn_menu{
+        display:flex;
+    }
 }
