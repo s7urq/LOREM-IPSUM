@@ -305,8 +305,9 @@ footer{
     }
 
     #titulo{
+        padding-top: 1rem;
         font-size: 70%;
-        max-width: 220px;
+        width: 200px;
         text-align: center;
     }
 }
