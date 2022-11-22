@@ -306,5 +306,7 @@ footer{
 
     #titulo{
         font-size: 70%;
+        max-width: 200px;
+        text-align: right;
     }
 }
