@@ -48,33 +48,80 @@
         </div>
     </header>
     <main class="main">
-        <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore saepe ducimus qui pariatur repellendus. Excepturi quo dolore qui debitis reiciendis et, incidunt alias laborum, natus temporibus iure ipsa similique illum!
+        <form action="" class= "container formulario" id="formulario">
+            <div class="formulario_grupo" id="usuario">
+                <label for="usuario" class="formulario_label">Usuario</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="usuario" id="usuario" placeholder="Bobby.square">
+                    <i class="formulario_validacion_estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input_error">El usuario debe ser de 4 a 10 caracteres</p>
+            </div>
+
+            <div class="formulario_grupo" id="nombre">
+                <label for="nombre" class="formulario_label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Bob Esponja">
+                    <i class="formulario_validacion_estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input_error">El nombre puede tener un maximo de 12 caracteres</p>
+            </div>
+
+            <div class="formulario_grupo" id="password">
+                <label for="password" class="formulario_label">Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="password" id="password" >
+                    <i class="formulario_validacion_estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input_error">El password debe ser de 4 a 12 digitos</p>
+            </div>
+
+            <div class="formulario_grupo" id="password2">
+                <label for="password2" class="formulario_label">Repetir contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="password2" id="password2" >
+                    <i class="formulario_validacion_estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input_error">Las contraseñas deben coincidir </p>
+            </div>
+
+            <div class="formulario_grupo" id="mail">
+                <label for="mail" class="formulario_label">E-Mail</label>
+                <div class="formulario_grupo-input">
+                    <input type="email" class="formulario_input" name="mail" id="mail" placeholder="spongebob@itba.edu.ar">
+                    <i class="formulario_validacion_estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input_error">Debe ser un correo real</p>
+            </div>
+
+            <div class="formulario_grupo" id="telefono">
+                <label for="telefono" class="formulario_label">Telefono</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="telefono" id="telefono" placeholder="11 4252-7207">
+                    <i class="formulario_validacion_estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario_input_error">Introduzca un numero de telefono valido</p>
+            </div>
+
+            <div class="formulario_grupo" id="grupo_terminos">
+                <label class="formulario_label">
+                    <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i><b> ERROR:</b> Rellene completamente los campos</p>
+            </div>
+
+            <div class="formulario_grupo formulario_grupo_btn-enviar">
+                <button type="submit" class="fornulario_btn">ENVIAR</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Se ha registrado su contacto</p>
+            </div>
+       </form>
     </div>
     </main>
     <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 </body>
 </html>
