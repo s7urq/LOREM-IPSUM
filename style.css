@@ -54,7 +54,7 @@ main{
 }
 
 .container{
-    width: 88%;
+    width: 86%;
     max-width: 850px;
     margin: 0 auto;
     font-family: 'sf-text';
@@ -306,7 +306,7 @@ footer{
 
     #titulo{
         font-size: 70%;
-        max-width: 200px;
+        max-width: 220px;
         text-align: center;
     }
 }
