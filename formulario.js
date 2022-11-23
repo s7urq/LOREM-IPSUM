@@ -101,13 +101,12 @@ formulario.addEventListener('submit', (e) => {
     if(campos.usuario && campos.nombre && campos.password && campos.password2 && campos.correo && campos.telefono && terminos.checked){
         formulario.reset();
         document.getElementById('formulario_mensaje-exito').classList.add('formulario_mensaje-exito-activo');
-
         setTimeout(() => {
         document.getElementById('formulario_mensaje-exito').classList.remove('formulario_mensaje-exito-activo');
         }, 5000);
 
-        document.querySelectorAll('formulario_grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario_grupo-correcto')
+        document.querySelectorAll('.formulario_grupo-correcto').forEach((icono) => {
+            icono.classList.remove('formulario_grupo-correcto');
         })
     }else{
         document.getElementById('formulario_mensaje').classList.add('formulario_mensaje-activo')
